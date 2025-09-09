@@ -7,4 +7,5 @@ ENV DB_NAME=training\
     DB_USER=peserta\ 
     DB_PASS=password\ 
     APP_PORT=3000
+    
 CMD npm start
