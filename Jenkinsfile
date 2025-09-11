@@ -6,7 +6,7 @@ pipeline {
             steps {
                 git branch: 'main', url: 'https://github.com/zainunkamal/simple-apps.git'
             }
-        }c
+        }
         
         stage('Build') {
             steps {
