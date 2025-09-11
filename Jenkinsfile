@@ -5,12 +5,7 @@ pipeline {
 
 
     stages {
-        stage('Pull-SCM') {
-            steps {
-                git branch: 'main', url: 'https://github.com/zainunkamal/simple-apps.git'
-            }
-        }
-        
+       
         stage('Build') {
             steps {
                 sh'''
