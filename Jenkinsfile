@@ -9,7 +9,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh'''
-                cd app
+                cd apps
                 npm install
                 '''
             }
