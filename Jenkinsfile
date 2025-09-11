@@ -1,5 +1,8 @@
 pipeline {
-    agent { label 'devops1-zainun' }
+    agent {
+        label 'devops1-zainun'
+    }
+
 
     stages {
         stage('Pull-SCM') {
