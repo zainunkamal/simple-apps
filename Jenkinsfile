@@ -18,7 +18,7 @@ pipeline {
         stage('Testing') {
             steps {
                 sh'''
-                cd app
+                cd apps
                 npm test
                 npm run test:coverage
                 '''
@@ -28,7 +28,7 @@ pipeline {
         stage('Code Review') {
             steps {
                 sh'''
-                cd app
+                cd apps
                 sonar-scanner \
                     -Dsonar.projectKey=simple-apps \
                     -Dsonar.sources=. \
